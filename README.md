@@ -14,6 +14,8 @@ The data contains four (4) columns:
 |3|`seq`| the reference sequence of the region|
 |4|`info`| whether or not the region has an observed variation|
 
+Please note the start positions are "0-based", such that the first 
+nucleotide for each sequence will be 1 position higher than the number.
 The `info` column is the most crucial part of a given row. If no
 variant was found within the row's regions of interest, the column 
 will have `No_variant` as its contents. However, if a variant is 
